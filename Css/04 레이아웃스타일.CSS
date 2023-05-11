@@ -1,0 +1,140 @@
+#box1{
+    border: 30px groove rgba(212, 176, 176, 0.87);
+    width: 200px;
+    /* 세로 가운데 정렬
+    height , line-height를 같은 값을 설정 */
+    height: 200px;
+    line-height: 200px;
+}
+#box2{
+    border: 2px solid red;
+    width:50%;
+    height: 50px;
+    
+}
+.display{
+    border:2px solid black;
+    width:150px;
+    height: 150px;
+
+}
+.display-inline{
+    display: inline;
+    
+}
+.display-inline-block{
+    display: inline-block;
+    
+}
+.area1{
+    background-color: red;
+    
+}
+.area2{
+    background-color: orange;
+   
+}
+.border{
+    border: 2px solid purple;
+    
+}
+.border1{
+    width:100px;
+    height: 100px;
+}
+.b1{
+    border-style: none;
+}
+.b2{
+    border-style: hidden;
+}
+.b3{
+    border-style: dotted;
+    border-color: hotpink;
+    border-top-color: aqua;
+    border-right-color: red;
+    border-bottom-color: green;
+    border-left-color: orange;
+
+    border-width: thick, thin;
+    /* 상 우 하 좌 - 시계방향 */
+    border-width:  10px 5px 2px 1px;
+
+    /* 상하 좌우 */
+    border-width: 10px 20px;
+}
+.b4{
+    /* 선의 스타일지정 */
+    border-style: dashed;
+    /* 선의 색상지정 */
+    border-color: rgb(141, 141, 46);
+    /* 선의 모서리를 둥글게-px사용 */
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 30px;
+    
+}
+.b5{
+    
+    border-style: double;
+    border-width:20px;
+    /* 선의 모서리를 원으로 만들기- 50%사용 */
+    border-radius: 50%;
+
+}
+.b6{
+    
+    border-style: groove;
+    border-width:10px;
+    border-radius: 30px;
+}
+.b7{
+    border-style: inset;
+}
+.b8{
+    border-style: outset;
+}
+.b9{
+    border-style: ridge;
+}
+.b10{
+    border-style: solid;
+}
+.space{
+    width: 100px;
+    height: 100px;
+    background-color: aquamarine;
+    border: 3px solid blue;
+}
+.margin1{
+    margin: 50px;
+}
+    /* 마진 중첩현상
+    요소를 세로로 배치할 경우 
+    마진이 큰쪽으로 겹쳐짐 */
+.margin2{
+    margin: 50px 150px;
+}
+.margin3{
+    margin: 30px 50px 80px 100px;
+}
+.padding1{
+    /* 상 우 하 좌 */
+    padding: 30px;
+      /*그림자  수평거리 수직거리 흐림정도 번짐정도 색상 */
+    box-shadow:    20px     20px     20px     20px  rgb(114, 114, 197);
+}
+.padding2{
+    /* 상&하  좌&우 */
+    padding : 20px 60px;
+    box-shadow: 10px 10px gray  ;
+    /* margin 속성을 이용해 가운데 정렬
+        **요소의 너비가 지정되어 있어야함!**
+        왼쪽마진과 오른쪽마진 속성값을 auto로 지정 */
+    margin:0px auto ;
+}
+.padding3{
+    /* 상 우 하 좌 각각 선택 */
+    padding: 20px 40px 60px 100px;
+    box-shadow: 10px 10px 30px 20px rgb(168, 95, 95)  ;
+    
+}

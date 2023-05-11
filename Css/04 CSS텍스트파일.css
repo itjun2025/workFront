@@ -1,0 +1,175 @@
+
+        
+  @import url('https://fonts.googleapis.com/css2?family=Black+And+White+Picture&family=Dongle&family=Gugi&display=swap');
+
+    #ff1{
+        font-family: "궁서체";
+    }
+    #ff2{
+        font-family: '굴림체';
+    }
+    /*
+    글꼴이 없는 경우를 대비해서
+    ,를 이용하여 여러글꼴을 나열할 수 있음 */
+    #ff3{
+        font-family: '맑은고딕', '돋움','굴림';
+    }
+    /*웹폰트  
+        1. import한다
+        2. 적용한다    */
+    h1{
+        font-family: 'Black And White Picture', sans-serif;
+        color: brown;
+    }
+    .web-font{
+        font-family: '맑은고딕';
+    }
+    #size1{
+            font-size: 16px;
+    }
+    #size2{
+            font-size: 2em;
+    }
+    #size3{
+            font-size: 150%;
+    }#fw1{
+            font-weight:bold;
+    }
+    #fw2{
+        font-weight:lighter;
+    }
+    #fw3{
+        font-weight:bolder;
+    }
+    #fv{
+        /* small-caps : 소문자를 대문자로(소문자크기의) 바굽니다
+        normar : 바꾸지 않음 */
+        font-variant:small-caps;
+    } 
+    #a{
+        font-style: italic;
+    }
+    #b{
+        font-style: oblique;
+    }
+    /* 글자색 변경하기
+        - 색상이름 표기법
+        - 16진수
+        - rgb/rgba 
+        - hsl/hsla         */
+    #c-name{
+        /* 이름으로 지정
+        웹 안전 색상
+        모든 웹 브라우저에서 표현할 수 있는 색상
+        16가지 기본색상을 포함 216가지 */
+        color: hsl(0, 100%, 50%);
+    }
+    #c-16{
+        /* #과 16진수 6자리를 합쳐서 색상을 표현
+        앞에서부터 2자리씩 묶어
+        빨강, 초록, 파랑 색상의 양을 표시
+        중복된 숫자인경우 3자리로 표현 가능 #112233 -> #123 */
+        color: #568;
+        background-color: #000;
+        padding: 20px;
+        font-size: 2em;
+    }
+    #c-rgb{
+        /* 빨강 초록 파랑 의 양을 0~255까지의 수로 표현 */
+        color: rgb(100, 255, 200);
+    }
+    #c-rgba{
+        /* a : 투명도
+        0~1 까지 0은 투명 1은 불투명 */
+
+        /* hsl 방식
+        색상(hue), 채도(saturation), 밝기(light) */
+        color: rgba(255, 0, 0, 0.5);
+        background-color: hsla(85, 44%, 83%, 0.918)
+    }
+    #no{
+        text-decoration: none;
+    }
+    #un{
+        text-decoration: underline;
+    }
+    #ov{
+        text-decoration: overline;
+    }
+    #th{
+        text-decoration: line-through;
+    }
+    li{
+        padding:20px;
+        border:1px dotted;
+    }
+    #href{
+        text-decoration:none;
+        font-size:1.5em;
+        color: #666;
+
+    }
+    #ts1{
+        text-shadow: -3px 10px 3px black;
+        font-size:1.5em;
+        font-weight: 500;
+    }
+    #ts2{
+        text-shadow: 5px -10px 2px rgb(202, 38, 38);
+        font-size:1.5em;
+        font-weight: 500;
+    }
+    #ts3{
+        text-shadow: 40px 7px 10px rgb(7, 197, 245);
+        font-size:3em;
+        font-weight: 900;
+    }
+    #tt2{
+        text-transform: none;
+    }
+    #tt2{
+        text-transform:capitalize;
+    }
+    #tt3{
+        text-transform:uppercase;
+    }
+    #tt4{
+        text-transform:lowercase;
+    }.lh1{
+        font-size:1em;
+        /* 줄간격 */
+        line-height: 1em;
+        /* 가로정렬 */
+        text-align: left;
+    }
+    .lh2{
+        font-size: 1.5em;
+        line-height: 1em;
+        text-align: right;
+    }
+    .lh3{
+        font-size: 1em;
+        line-height: 3em;
+        text-align: center;
+    }
+    .lh4{
+        font-size: 0.7em;
+        line-height: 2em;
+        /* 양쪽정렬 */
+        text-align: justify;
+    }
+    table{
+        /* 캡션의 위치 기본(top) */
+        caption-side:bottom;
+        /* 테두리 검정색 실선으로 표시 */
+        border: 2px dotted #999;
+        /* 테두리를 한줄로 표시 */
+        border-collapse: collapse;
+    }
+    th,tr,td{
+        border: 2px dotted #999;
+        padding: 10px 30px;
+    }
+
+
+    

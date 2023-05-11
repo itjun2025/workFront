@@ -5,6 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>회원가입</title>
+    <style>
+        table, td, th{
+            text-align: center;
+            color: blue;
+        }
+    </style>
 </head>
 <body>
     <h1>회원가입</h1>
@@ -12,26 +18,28 @@
         <fieldset>
             
             <legend>필수 입력 사항</legend>
-            <table>
+            <table >
         <tr>
-                <td><label><b>ID</b></td>
-                <td><input type='text' name='id' id='id' size='20' 
-                       maxlength='10' placeholder='아이디 10글자 이내'> </label></td>
-            <td><input type='submit' value='중복확인'></td>
+            <td><label for='id'><b>ID</b></label></td>
+                <td><input type='text' name='id' id='id'  
+                       maxlength='10' placeholder='아이디 10글자 이내'></label></td>
+            <td><input type='button' value='중복확인'></td>
         </tr>
         <tr>
-            <td><b>비밀번호</b> </td>
-            <td><input type='password' name='pw' id='pw' size='20'
+            <td><label for='pw'><b>비밀번호</b></label></td>
+            <td><input type='password' name='pw' id='pw' 
                         minlength='8' placeholder='영문,숫자,특수문자 포함8자 이상'></td>
+            <td></td>
         </tr>
         <tr>
-            <td><b>비밀번호 확인</b></td>
-            <td><input type='password' name='pw' id='pw' size='20'></td>
+            <td><label for='pwC'><b>비밀번호 확인</b></label></td>
+            <td><input type='password' name='pwC' id='pwC' ></td>
+            <td></td>
         </tr>
         <tr>
-            <td><b>Email</b></td>
-            <td><input type='email' name='email' id='email' size='20'></td>
-            <td><select>
+            <td><label for='email'><b>Email</b></label></td>
+            <td><input type='email' name='email' id='email' ></td>
+            <td><select name='emailAddr' id='emailAddr'>
                 <option>@naver.com</option>
                 <option>@google.com</option>
                 <option>@nate.com</option>
@@ -44,33 +52,60 @@
 
         <fieldset>
             <legend>추가 정보</legend>
-            프로필 사진 : <input type='file' value='파일선택' multiple> 
-            <p></p>
+        <ul>
+            <li>
+            <label for='file'> 프로필 사진 :</label>
+            <input type='file' name='file' id='file' value='파일선택' multiple> 
+            </li>
+            
+            <li>
+                <label for='gender'>성별 :</label>
+                <input type='radio' name='gender' id='gender' value='m' checked >남자 
+                <input type='radio' name='gender' id='gender' value='f'>여자
+            </li>
             
             
-                성별 : <input type='radio' name='gender' id='gender' value='m' checked >남자 
-                        <input type='radio' name='gender' id='gender' value='f'>여자
+            <li>
+                <label for='birth'>생년월일 :</label>
+                <input type='date' name='birth' id='birth' value=''>
+            </li>
             
-            <p></p>
-            생년월일 : <input type='date' name='date' id='date' value=''>
-            <p></p>
-            취미: <br>
-            <input type='checkbox' name='hobby' id='baseball' >야구
-            <input type='checkbox' name='hobby' id='Basketball' >농구
-            <input type='checkbox' name='hobby' id='soccer' >축구
-            <br><input type='checkbox' name='hobby' id='study' checked >공부
-            <input type='checkbox' name='hobby' id='listen_music' >음악감상
-            <br><input type='checkbox' name='hobby' id='other' >기타 :
-            <input type='text' size='20'>
+            <li>
 
-            <p></p>
-            자기소개<br>
-            <textarea rows='5' cols='50' style='resize: none;'></textarea>
+                취미 : 
+                <br>
+                <input type='checkbox' name='hobby' id='hobby1' vlaue='baseball'>
+                <label for='hobby1'>야구</label>
+
+                <input type='checkbox' name='hobby' id='hobby2'  vlaue='Basketball'>
+                <label for='hobby2'>농구</label>
+
+                <input type='checkbox' name='hobby' id='hobby3'  vlaue='soccer'>
+                <label for='hobby3'>축구</label>
+
+                <br><input type='checkbox' name='hobby' id='hobby4' vlaue='study' checked>
+                <label for='hobby4'>공부</label>
+
+                <input type='checkbox' name='hobby' id='hobby5'  vlaue='listen_music'>
+                <label for='hobby5'>음악감상</label>
+                
+                <br><input type='checkbox' name='hobby' id='hobby6'  vlaue='other'>
+                <label for='hobby6'>기타 :</label>
+                <input type='text' name='etc' id='etc' >
+            </li>
+            
+            <li>
+                
+                자기소개<br>
+                <textarea rows='5' cols='50' style='resize: none;'></textarea>
+                                     <!-- style='resize: none;' = 사이즈 변경X -->
+            </li>
+        </ul>
         </fieldset>
         <br>
         <input type='submit' value='회원가입'>
         <input type='reset' value='다시입력'>
-        <input type='reset' value='이전으로'>
+        <input type='button' value='이전으로'>
     </form>
 </body>
 </html>
