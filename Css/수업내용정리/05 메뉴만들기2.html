@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>메뉴만들기2</title>
+    <style>
+        ul{
+            list-style: none;
+        }
+        li{ 
+            /* display: inline; */
+            float: left;
+            border: 1px solid olivedrab;
+            width: 100px;
+            height: 30px;
+        }
+        a{
+            /* 블럭처럼 크기를 지정하기위해 inline-block 으로 변경 */
+            display: inline-block;
+            width: 100px;
+            /* height과 동일한 값을 주어 세로정렬 */
+            line-height: 30px;
+            /* 가로정렬 */
+            text-align: center;
+            /* a 요소의 브라우저 기본 스타일 제거 */
+            text-decoration: none;
+            color : purple;
+            font-weight: 800;
+            
+            /* border-left: 1px solid salmon; */
+            
+        }
+        /* 요소에 마우스가 올려졌을때 */
+        a:hover{
+             color: white;
+             background-color: red;
+            
+        }
+       
+    </style>
+</head>
+<body>
+    <ul>
+        <li ><a href='#'>메뉴1</a></li>
+        <li ><a href='#'>메뉴2</a></li>
+        <li ><a href='#'>메뉴3</a></li>
+        <li ><a href='#'>메뉴4</a></li>
+        
+    </ul>
+   
+</body>
+</html>

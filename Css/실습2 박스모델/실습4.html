@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<title>애완견 돌보기</title>
+	<style>
+		* {
+			margin:0px auto;
+			/* 컨텐츠 영역 + 패딩영역 + 테두리 영역까지
+				 포함하여 사이즈를 지정 */
+			box-sizing: border-box;
+		}
+		#container{
+			width: 800px;
+			/* height: 1000px; */
+			/* border: 1px solid black; */
+
+		}
+		
+		header{
+			background-color: skyblue;
+			width: 800px;
+			height: 100px;
+			margin: 0 auto;
+			/* border: 1px solid orange; */
+			
+		}
+		header > h1{
+			line-height: 120px;
+			padding-left: 20px;
+			float: left;
+		}
+		nav{
+			width: 500px;
+			height: 120px;
+			line-height: 120px;
+			/* border: 1px solid slategray; */
+			float: right;
+		}
+		ul{
+			list-style: none;
+			/* border: 1px solid  red; */
+		}
+		li{
+			/* border: 1px solid slateblue; */
+			display: inline-block;
+			width: 100px;
+
+		}
+		a{
+			text-decoration: none;
+			color: white;
+			/* font-weight: 900; */
+
+			/* border: 1px solid lawngreen; */
+			display: inline-block;
+			width: 100px;
+			height: 50px;
+			line-height: 50px;
+			text-align: center;
+		}
+		a:hover{
+			font-weight: 900;
+			background-color: aqua;
+			color: navy;
+
+			border-radius: 10px;
+		}
+		section{
+			clear: both;
+			width: 800px;
+			height: 500px;
+			border: solid  pink;
+			border-width: 5px 5px 20px 5px;
+			position: relative;
+		}
+		footer{
+			font-size: smaller;
+		}
+		.imgbox{
+			background: url(../images/book.png) no-repeat;
+			background-size: contain;
+			width: 200px;
+			height: 200px;
+			border: 1px solid black;
+			margin: 10px;
+		}
+		.pricebox{
+			
+			width: 200px;
+			height: 200px;
+			border: 1px solid black;
+			margin: 10px;
+			padding-top: 30px;
+			text-align: center;
+			background-color: rgba(0, 0, 0, 0.507);
+			color: white;
+			font-weight: 800;
+			display: none;
+		}
+		.imgbox:hover + .pricebox,.pricebox:hover{
+			display: inline;
+			position: absolute;
+			top:0px;
+		} 
+		.box{
+			width: 200px;
+			height: 200px;
+			border: 1px solid black;
+			padding: 20px;
+			left: 0;
+			text-align: right;
+		}
+		.borderbox{
+			/* 레이아웃을 잡을때
+			box-sizing속성값을 border-box로 잡아 주어야
+			박스가 깨지지 않고 레이아웃을 잡아줄 수 있다.
+
+			컨텐츠+패딩+border-box */
+			box-sizing: border-box;
+		}
+		.contentbox{
+			box-sizing: content-box;
+		}
+	</style>
+</head>
+<body>
+	<div id='container'>
+
+		<header>
+			<h1>애완견 종류</h1>
+			<nav>
+				<ul>
+					<li><a href="#">애완견 종류</a></li>
+					<li><a href="#">입양하기</a></li>
+					<li><a href="#">건강돌보기</a></li>
+					<li><a href="#">더불어살기</a></li>
+				</ul>
+			</nav>
+			
+		</header>
+		<section>
+			<div class='imgbox'></div>
+			<div class='pricebox'>
+				웹디자인 입문<br>
+				가격 : 1000원<br>
+				사러가기
+			</div>
+		</section>
+		<footer>
+			<p>Copyright 2012 funnycom</p>
+		</footer>
+		<div class=' box borderbox'>보더박스</div>
+		<div class=' box contentbox'>컨텐츠박스</div>
+	</div>
+</body>
+</html>
