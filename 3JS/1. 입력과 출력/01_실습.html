@@ -58,7 +58,17 @@
             var color = selectColor.value;
             var boxColor = getComputedStyle(div1).backgroundColor;
             console.log('color:',color);
+
+            // #123456
+            //16진수 숫자를 rgb로 변경
+            var r = parseInt(color.substr(1,2),16);
+            var g = parseInt(color.substr(3,2),16);
+            var b = parseInt(color.substr(5,2),16);
+            // rgb타입으로 생성
+            var rgbColor =`rgb(${r},${g},${b})`;
+            console.log('rgbcolor:',rgbColor);
             console.log('boxcolor:',boxColor);
+
             // 박스의 배경색깔을 변경
             div1.style.backgroundColor = color;
         }
